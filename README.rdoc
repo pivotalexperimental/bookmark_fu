@@ -1,0 +1,23 @@
+== Installation
+ruby script/plugin install git://github.com/pivotal/bookmark_fu.git
+
+== Configuration
+Installation copies configuration to RAILS_ROOT/config/bookmark_fu.yml. It includes all of the supported
+bookmarks by default. You may remove entries to hide link to specific services or reorder links
+to put them into a specific order.
+
+Here is an example exercpt from the configuration file:
+- Digg
+- Delicious
+- Reddit
+
+== Dependencies
+
+== Usage
+In a helper or controller, include the module BookmarkFu::SocialBookmarkingHelper.
+This will give you the bookmarks and bookmark methods.
+
+  <%= bookmarks(your_url, title) # This will add all of your social bookmarks %>
+  <%= bookmark(BookmarkFu::Digg, your_url, title) # This will add the Digg social bookmarks here %>
+
+Copyright (c) 2010 Pivotal Labs. This software is licensed under the MIT License.
