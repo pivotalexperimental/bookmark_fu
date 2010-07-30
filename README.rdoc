@@ -20,4 +20,4 @@ This will give you the bookmarks and bookmark methods.
   <%= bookmarks(your_url, title) # This will add all of your social bookmarks %>
   <%= bookmark(BookmarkFu::Digg, your_url, title) # This will add the Digg social bookmarks here %>
 
-Copyright (c) 2010 Pivotal Labs. This software is licensed under the MIT License.
+Copyright (c) 2007-2010 Pivotal Labs. This software is licensed under the MIT License.
